@@ -1,0 +1,43 @@
+package business;
+
+public class Casilla {
+
+	private byte posicion;
+	private String simbolo;
+	
+	public void marcar(String simbolo) {
+		if(estaMarcada()) {
+			throw new RuntimeException("No es posible volver a marcar. Ya existe en esta casilla el simbolo");
+		}
+	}
+	
+	private boolean cadenaEsVacioONula(String cadena) {
+		return (simbolo == null || "".intern() == simbolo.trim().intern());
+	}
+	private boolean estaMarcada() {
+		return(!cadenaEsVacioONula(simbolo));
+		
+	}
+	
+	private void setSimbolo(String simbolo) {
+		
+		if(cadenaEsVacioONula(simbolo)) {
+			throw new RuntimeException("No es posible colocar un simbolo vacio o nulo");
+		}
+		
+		this.simbolo = simbolo;
+	}
+	public String getSimbolo() {
+		if(cadenaEsVacioONula(simbolo)) {
+			setSimbolo("");
+		}
+		
+		return simbolo.trim();
+	}
+	
+	//public static void main(String[] args) {
+		//String aString = null;
+		
+		//System.out.println("".equals(aString.trim()));
+	//}
+}

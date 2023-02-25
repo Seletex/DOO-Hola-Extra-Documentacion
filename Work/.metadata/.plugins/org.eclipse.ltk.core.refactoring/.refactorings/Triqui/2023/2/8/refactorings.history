@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;business.Tableto.java&apos; to &apos;Tablero.java&apos;&#x0D;&#x0A;- Original project: &apos;Triqui&apos;&#x0D;&#x0A;- Original element: &apos;business.Tableto.java&apos;&#x0D;&#x0A;- Renamed element: &apos;business.Tablero.java&apos;" description="Rename compilation unit &apos;Tableto.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;business{Tableto.java" name="Tablero.java" references="false" stamp="1677282257141" version="1.0"/>
+</session>

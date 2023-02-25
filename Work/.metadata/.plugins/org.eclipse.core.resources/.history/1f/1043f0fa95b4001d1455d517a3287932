@@ -1,0 +1,26 @@
+package business;
+
+public class Casilla {
+
+	private byte posicion;
+	private String simbolo;
+	
+	public void marcar(String simbolo) {
+		
+	}
+	
+	private void setSimbolo(String simbolo) {
+		
+		if(simbolo == null || "".intern() == simbolo.trim().intern()) {
+			
+		}
+		
+		this.simbolo = simbolo;
+	}
+	
+	public static void main(String[] args) {
+		String aString = null;
+		
+		System.out.println("".equals(aString.trim()));
+	}
+}

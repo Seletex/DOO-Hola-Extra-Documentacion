@@ -1,0 +1,17 @@
+package business;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Tableto {
+	private Map<Byte, Casilla> tablero = new HashMap<>();
+	public Tableto() {
+		inicializar();
+	}
+	
+	private void inicializar() {
+		for(byte indice = 1; indice <= 9; indice++) {
+			tablero.put(indice, new Casilla(indice));
+		}
+	}
+}

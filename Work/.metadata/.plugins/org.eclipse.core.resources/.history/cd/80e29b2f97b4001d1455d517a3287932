@@ -1,0 +1,34 @@
+package business;
+
+public class Casilla {
+
+	private byte posicion;
+	private String simbolo;
+	
+	public void marcar(String simbolo) {
+		
+	}
+	
+	private boolean estaMarcada() {
+		if(simbolo != null && "".intern() == simbolo.trim().intern()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	private void setSimbolo(String simbolo) {
+		
+		if(simbolo == null || "".intern() == simbolo.trim().intern()) {
+			throw new RuntimeException("No es posible colocar un simbolo vacio o nulo");
+		}
+		
+		this.simbolo = simbolo;
+	}
+	
+	//public static void main(String[] args) {
+		//String aString = null;
+		
+		//System.out.println("".equals(aString.trim()));
+	//}
+}
