@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/EclipseJdk19/openjdk-19.0.2_windows-x64_bin/jdk-19.0.2/lib/jrt-fs.jar
-org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/EclipseJdk19/openjdk-19.0.2_windows-x64_bin/jdk-19.0.2/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=E\:/Recursos/openjdk-19.0.2_windows-x64_bin/jdk-19.0.2/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=E\:/Recursos/openjdk-19.0.2_windows-x64_bin/jdk-19.0.2/lib/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.codeComplete.argumentPrefixes=
 org.eclipse.jdt.core.codeComplete.argumentSuffixes=

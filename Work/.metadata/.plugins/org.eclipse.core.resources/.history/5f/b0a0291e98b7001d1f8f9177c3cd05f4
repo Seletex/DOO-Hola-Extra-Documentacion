@@ -32,6 +32,6 @@ public class Tablero {
 		valoresTernaList.add(tablero.get(posicionDos).getSimbolo());
 		valoresTernaList.add(tablero.get(posicionTres).getSimbolo());
 		
-		return casilla.stream().map(Casilla::getSimbolo).distinct().count() == 1 && casillas.get(0).estaMarcada();
+		return casillas.stream().map(Casilla::getSimbolo).distinct().count() == 1 && casillas.get(0).estaMarcada();
 	}
 }
