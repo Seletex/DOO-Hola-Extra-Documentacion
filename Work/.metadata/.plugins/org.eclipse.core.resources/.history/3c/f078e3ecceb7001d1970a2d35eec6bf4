@@ -27,14 +27,12 @@ public class Tablero {
 	}
 	
 	private boolean ternaEsValida(byte posicionUno,byte posicionDos,byte posicionTres) {
-		List<Casilla> casilla = new ArrayList<>();
-	
-		casilla.add(tablero.get(posicionUno));
-		casilla.add(tablero.get(posicionDos));
-		casilla.add(tablero.get(posicionTres));
+		List<String> valoresTernaList = new ArrayList<>();
+		Casilla casilla = new Casilla();
+		valoresTernaList.add(tablero.get(posicionUno).getSimbolo());
+		valoresTernaList.add(tablero.get(posicionDos).getSimbolo());
+		valoresTernaList.add(tablero.get(posicionTres).getSimbolo());
 		
-		return casilla.stream()
-				.map(Casilla::getSimbolo)
-				.distinct().count() == 1 && casilla.get(0).estaMarcada();
+		return casilla.stream().map(Casilla::getSimbolo).distinct().count() == 1 && casilla.get(0).estaMarcada();
 	}
 }

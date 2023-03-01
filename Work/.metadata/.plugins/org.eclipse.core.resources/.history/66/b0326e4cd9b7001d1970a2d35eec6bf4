@@ -33,8 +33,6 @@ public class Tablero {
 		casilla.add(tablero.get(posicionDos));
 		casilla.add(tablero.get(posicionTres));
 		
-		return casilla.stream()
-				.map(Casilla::getSimbolo)
-				.distinct().count() == 1 && casilla.get(0).estaMarcada();
+		return casilla.stream().map(Casilla::getSimbolo).distinct().count() == 1 && casilla.get(0).estaMarcada();
 	}
 }

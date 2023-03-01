@@ -15,10 +15,6 @@ public class Casilla {
 		this.simbolo = simbolo;
 	}
 
-	public Casilla() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public void marcar(String simbolo) {
 		if (estaMarcada()) {
 			throw new RuntimeException("No es posible volver a marcar. Ya existe en esta casilla el simbolo");
